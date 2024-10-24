@@ -16,20 +16,23 @@ section {
   align-items: center;
   padding: 10px 20px;
   background-color: black;
+
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    li {
+      list-style: none;
+      font-weight: 400;
+      font-size: 13px;
+    }
+  }
+
 }
 
-.header-container ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-}
 
-ul li {
-  list-style: none;
-  font-weight: 400;
-  font-size: 13px;
-}
 
 /* Content.jsx 에서 tailwindcss를 사용하여 적용한 후 주석처리 하여 결과를 확인합니다. */
 .content-container {
@@ -37,28 +40,30 @@ ul li {
   flex-direction: column;
   align-items: flex-start;
   gap: 5px;
+  
+  img {
+    width: 300px;
+    border-radius: 10px;
+    margin-bottom: 3px;
+  }
+  
+  span {
+    font-size: 12px;
+    color: #d7fa00;
+    border: 1px solid #d7fa00;
+    padding: 4px 5px;
+    border-radius: 3px;
+  }
+  
+  div {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  
+  p {
+    font-size: 12px;
+    color: rgb(160, 160, 160);
+  }
+  
 }
 
-.content-container img {
-  width: 300px;
-  border-radius: 10px;
-  margin-bottom: 3px;
-}
-
-.content-container span {
-  font-size: 12px;
-  color: #d7fa00;
-  border: 1px solid #d7fa00;
-  padding: 4px 5px;
-  border-radius: 3px;
-}
-
-.content-container div {
-  font-size: 18px;
-  font-weight: 600;
-}
-
-.content-container p {
-  font-size: 12px;
-  color: rgb(160, 160, 160);
-}
